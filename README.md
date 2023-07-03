@@ -1,6 +1,6 @@
 # javascript-tareas
 
-Trabajo Práctico n°1 de la comisión 62i de RollingCode
+Repositorio de tareas de JavaScript de la comisión 62i de RollingCode
 
 ###Instrucciones
 
