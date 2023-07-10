@@ -1,9 +1,9 @@
-let edad = parseInt(prompt("Para saber si ya puede conducir, escriba su edad (los números decimales serán redondeados por truncamiento)."));
+let edad = parseInt(prompt("Para saber si ya puede conducir, escriba su edad a continuación:"));
 
 do {
     if (isNaN(edad)) {
         alert("El dato ingreasado no es válido.");
-        edad = parseInt(prompt("Para saber si ya puede conducir, escriba su edad (los números decimales serán redondeados por truncamiento)."));
+        edad = parseInt(prompt("Para saber si ya puede conducir, escriba su edad a continuación:"));
     }
 } while (isNaN(edad)); {
     if (edad >= 18) {

@@ -1,7 +1,7 @@
 let nota = parseInt(prompt("Coloque la nota a corregir a continuación:"));
-let bucle = true;
+let valor = 1
 
-while (true) {
+while (valor > 0) {
     switch (true) {
         case isNaN(nota):
             alert("Introduce un número válido");
