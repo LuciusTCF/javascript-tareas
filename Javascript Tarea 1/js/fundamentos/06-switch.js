@@ -131,35 +131,3 @@ switch (creditoPagado) {
             );
         break;
 }
-
-/*
-switch (true) {
-    case creditoPagado = 1:
-        alert('Puede acceder a la sala de Arcade.');
-        break;
-    case creditoPagado = 2:
-        alert('Puede acceder a las salas de Arcade y Consolas.');
-        break;
-    case creditoPagado = 3:
-        alert(
-            'Puede acceder a las salas de Arcade, Consolas y Rol.'
-        );
-        break;
-    case creditoPagado = 4:
-        alert(
-            'Puede acceder a las salas de Arcade, Consolas, Rol y Realidad Virtual.'
-        );
-        break;
-    case creditoPagado != (1 || 2 || 3 || 4):
-        alert(
-            'Recuerde que tiene que ingresar un crédito entre 1 y 4.'
-        );
-        break;
-
-    default:
-        alert(
-            'Recuerde que debe ingresar la cantidad de créditos que desea pagar\n1: (Primera sala), 2: (Primeras dos salas), 3: (Primeras tres salas), 4: (Primeras cuatro salas).'
-            );
-        break;
-}
-*/

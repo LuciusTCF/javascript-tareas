@@ -1,22 +1,22 @@
 //bucles o ciclos
 
 //while
+//mientras se cumpla la condición hacer algo varias veces
 
 // while (condition) {
 //     //acciones
 //     //controlar el bucle
-// };
+// }
 
 // let vecesASumar = 10; //iterador
 // let totalSuma = 0;
 
 // while (vecesASumar > 0) {
-    
 //     //acciones
 //     totalSuma += 10; //totalSuma = totalSuma + 10
 //     vecesASumar--;
 //     console.log(
-//         `Total de la suma: ${totalSuma} | veces que queadan a sumar: ${vecesASumar}`
+//         `Total de la suma: ${totalSuma} | veces que quedan por sumar: ${vecesASumar}`
 //         );
 // }
 
@@ -38,7 +38,7 @@ if(!isNaN(tabla)) {
 let pokemon = prompt("Ingresa el nombre del Pokémon capturado");
 let pokedex = "";
 
-while (pokemon!="0") {
+while (pokemon) {
     //acciones
     
     pokedex = pokedex +" | "+ pokemon;
