@@ -28,4 +28,4 @@ do {
         }
     }
 }
-document.write(vocalesFrase.join(" | "));
+document.write(`Hay ${vocalesFrase.length} vocales en la frase. Estas son:<br>${vocalesFrase.join(" | ")}`);
