@@ -1,4 +1,4 @@
-const numero = function (paridad = Number(prompt("Ingrese un número para saber si es par"))) {
+const numero = (paridad = Number(prompt("Ingrese un número para saber si es par"))) => {
     do {
         if (isNaN(paridad)) {
             alert("El dato ingresado no es un número.");

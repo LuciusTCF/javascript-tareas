@@ -1,4 +1,4 @@
-const perimetroRectangulo = function (a = ladoA, b = ladoB) {
+const perimetroRectangulo = (a = ladoA, b = ladoB) => {
     do {
         if (isNaN(a) || isNaN(b)) {
             alert("El dato ingresado no es un número.");
