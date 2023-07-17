@@ -1,10 +1,10 @@
 const numero = (paridad = Number(prompt("Ingrese un número para saber si es par"))) => {
     do {
-        if (isNaN(paridad)) {
+        if (isNaN(paridad) || paridad % 1 != 0) {
             alert("El dato ingresado no es un número.");
             paridad = Number(prompt("Ingrese un número para saber si es par"));
         }
-    } while (isNaN(paridad)) {
+    } while (isNaN(paridad) || paridad % 1 != 0) {
         if (paridad % 2 == 0) {
             return `El número ${paridad} es par`;
         } 
@@ -13,6 +13,3 @@ const numero = (paridad = Number(prompt("Ingrese un número para saber si es par
         }
     }
 };
-
-
-//cuando intento que el botón del archivo HTML active un document.write en vez de un alert, el CSS de la página deja de funcionar.
