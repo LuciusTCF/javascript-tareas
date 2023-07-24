@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(122, 122, 122);
+  background-color: rgb(35, 35, 35);
   color: white;
 }
 .body-exercice {
   font-size: 2rem;
 }
 h1 {
-  color: black;
   font-size: 2.5rem;
 }
 .btn {

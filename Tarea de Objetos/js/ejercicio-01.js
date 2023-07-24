@@ -1,8 +1,8 @@
-let usuario = {
+let user = {
     username: "LuciusTCF",
     state: "Disponible",
     role: "Alumno",
-    cambiarEstado: function () {
+    changeState: function () {
         switch (this.state) {
             case "Disponible":
                 this.state = "Ausente"
@@ -12,11 +12,11 @@ let usuario = {
                 break;
         }
     },
-    mostrarInfo: function () {
+    showInfo: function () {
         for (const prop in this) {
-            if (prop != "cambiarEstado" && prop != "mostrarInfo") {
+            if (prop != "changeState" && prop != "showInfo") {
                 console.log(`${prop}: ${this[prop]}`);
             }
         }
-    },
+    }
 };
