@@ -12,11 +12,13 @@ class Producto {
 let producto1 = new Producto("001","Nesquik 800gr",1100);
 let producto2 = new Producto("002","Coca-Cola 3L",1300);
 let producto3 = new Producto("003","Azúcar 1Kg",430);
-let productos = [
-    producto1,
-    producto2,
-    producto3,
-];
+// let productos = [
+//     producto1,
+//     producto2,
+//     producto3,
+// ];
+let productos = []
+productos.push(producto1, producto2, producto3);
 
 const impDatos = () => {
     let infoLista = "<br><h2>PRODUCTOS:</h2><hr><br><ol>";

@@ -45,7 +45,9 @@ class Persona {
   }
   };
   generaDNI() {
-    return Math.floor(Math.random() * (100000000 - 10000000)) + 10000000;
+    // return Math.floor(Math.random() * (100000000 - 10000000)) + 10000000;
+    this.dni = Math.floor(Math.random() * (100000000 - 10000000)) + 10000000;
+    return `El DNI generado es ${this.dni}`
   };
 }
 
