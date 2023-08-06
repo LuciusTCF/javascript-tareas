@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prácticas con DOM y BOM</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="container body-exercice">
+    <div class="container-fluid d-flex justify-content-center my-4">
+      <div class="row">
+        <div class="col">
+          <h1>Ejercicio 5</h1>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form class="col-6" onsubmit="agregar(event)">
+        <div class="mb-3">
+          <label for="input" class="form-label">Escribe una tarea</label>
+          <textarea class="form-control" id="input" rows="3"></textarea>
+        </div>
+        <div class="mb-3 d-flex justify-content-end">
+          <button class="btn btn-success">Guardar</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h4>Lista de tareas</h4>
+      <div class="mb-3">
+        <ul id="tarea"></ul>
+      </div>
+    </div>
+
+    <!-- <div class="col-12 mt-2">
+      <h6
+        id="parr5"
+        class="d-flex text-align-center bg-danger text-white justify-content-center"
+      >
+        Agregue los elementos a su lista de compra, puede crear varias listas y
+        guardarlas
+      </h6>
+      <div class="col-6">
+        <form onsubmit="guardarDatos(event)">
+          <div class="mb-3">
+            <label for="input1" class="form-label text-danger"
+              >Producto N° 1</label
+            >
+            <input type="text" class="form-control" id="input1" />
+          </div>
+          <div class="mb-3">
+            <label for="input2" class="form-label text-danger"
+              >Producto N° 2</label
+            >
+            <input type="email" class="form-control" id="input2" />
+          </div>
+          <div class="mb-3">
+            <label for="input3" class="form-label text-danger"
+              >Producto N° 3</label
+            >
+            <input type="text" class="form-control" id="input3" />
+          </div>
+          <div class="mb-3">
+            <label for="input4" class="form-label text-danger"
+              >Producto N° 4</label
+            >
+            <input type="text" class="form-control" id="input4" />
+          </div>
+          <div class="mb-3">
+            <label for="input5" class="form-label text-danger"
+              >Producto N° 5</label
+            >
+            <input type="text" class="form-control" id="input5" />
+          </div>
+          <div class="mb-3 d-flex justify-content-end">
+            <button
+              id="button4"
+              class="btn btn-outline-danger"
+              onclick="guardarProductos(event)"
+            >
+              Guardar Lista
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button
+          id="button5"
+          class="btn btn-danger mt-3"
+          onclick="mostrarLista()"
+        >
+          MOSTRAR LISTAS
+        </button>
+      </div>
+      <p id="parr6" class="text-align-center"></p>
+    </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/ejercicio-05.js"></script>
+  </body>
+</html>
