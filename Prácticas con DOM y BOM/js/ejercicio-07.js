@@ -1,37 +1,40 @@
-// let texto = document.querySelector("#input");
-// let listaDeTareas = [];
-
-// const agregar = (event, index) => {
-//   event.preventDefault();
-//   let tareaAgregada = `<li>${texto.value}</li>
-//   <button class="btn btn-danger btn-sm" onclick="borrarAlumno(${index})">Eliminar</button>`;
-//   listaDeTareas.push(tareaAgregada);
-//   localStorage.setItem("listaDeTareas", JSON.stringify(listaDeTareas));
-//   document.querySelector("#tarea").innerHTML = listaDeTareas.join("");
-//   document.querySelector("form").reset();
-//   texto.focus();
-// };
-
-// const eliminarTarea = (index) => {
-//   let confirmar = confirm(
-//     `¿Está seguro que quiere eliminar a ${listaDeTareas[index]}?`
-//   );
-//   if (confirmar) {
-//     listaDeTareas.splice(index, 1);
-//     localStorage.setItem("listaDeTareas", JSON.stringify(listaDeTareas));
-//     alert("El registro fue eliminado");
-//     cargarTabla();
-//   }
-// };
-
+const listaDeTareas = JSON.parse(localStorage.getItem("listaDeTareas")) || [];
 let texto = document.querySelector("#input");
-let listaDeTareas = [];
 
 const agregar = (event) => {
   event.preventDefault();
-  let tareaAgregada = `<li>${texto.value}</li>`;
+  const tareaAgregada = texto.value;
   listaDeTareas.push(tareaAgregada);
-  document.querySelector("#tarea").innerHTML = listaDeTareas.join("");
+  localStorage.setItem("listaDeTareas", JSON.stringify(listaDeTareas));
   document.querySelector("form").reset();
+  cargarTabla();
   texto.focus();
 };
+
+let cuerpoTabla = document.querySelector("#tarea");
+
+const cargarTabla = () => {
+  cuerpoTabla.innerHTML = "";
+  listaDeTareas.map((valor, index) => {
+    let lista = document.createElement("li");
+    let elemento = `${valor}
+    <button class="btn btn-danger btn-sm" onclick="eliminar(${index})">Eliminar</button>
+     <hr>`;
+    lista.innerHTML = elemento;
+    cuerpoTabla.append(lista);
+  });
+};
+
+const eliminar = (index) => {
+  let confirmar = confirm(
+    `¿Está seguro que quiere eliminar a "${listaDeTareas[index]}"?`
+  );
+  if (confirmar) {
+    listaDeTareas.splice(index, 1);
+    localStorage.setItem("listaDeTareas", JSON.stringify(listaDeTareas));
+    alert("El registro fue eliminado");
+    cargarTabla();
+  }
+};
+
+cargarTabla();
