@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tarea de Objetos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="container">
+    <div class="container-fluid d-flex justify-content-center my-4">
+      <div class="row">
+        <div class="col">
+          <h1>Práctica de CRUD y Eventos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex row align-content-between">
+      <p>Utilizar módulos para hacer un código más prolijo</p>
+      <ul>
+        <li>
+          Crear un formulario para ingresar una imagen, su título y una
+          descripción
+        </li>
+        <li>Guardar el objeto en una lista en LocalStorage.</li>
+        <li>
+          Crear una galería de imágenes. Si no hay imágenes cargadas en el
+          LocalStorage, que lo indique por pantalla.
+        </li>
+        <li>
+          Crear un botón que elimine la imagen que se está mostrando por
+          pantalla y otro que me permita editar solamente el título o
+          descripción.
+        </li>
+        <li>
+          Modificar el código para que solo se muestre una imagen a la vez, sin
+          su título y descripción.
+        </li>
+        <li>Cuando hago click sobre una imagen, pasa a la siguiente.</li>
+        <li>
+          Cuando hago doble click sobre una imagen, muestro por pantalla su
+          título y descripción.
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center">
+          Ingrese los datos de la imagen
+        </h5>
+        <form id="formAdd" class="row">
+          <div class="col-12 mb-3">
+            <label class="form-label">Link de la imagen</label>
+            <input
+              class="form-control"
+              type="text"
+              id="link"
+              name="link"
+              placeholder="https://ejemplo.png"
+              required
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label">Título</label>
+            <input
+              class="form-control"
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Imagen 1"
+              required
+            />
+          </div>
+          <div class="col-12 mb-3">
+            <label class="form-label">Descripción</label>
+            <input
+              class="form-control"
+              type="text"
+              id="desc"
+              name="desc"
+              placeholder="Imagen 100px X 200px"
+              required
+            />
+          </div>
+          <div class="col-12 mb-3 d-grid">
+            <button class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="galeryPlace">
+      <h3 class="my-5 d-flex justify-content-center">
+        No hay imagenes cargadas en el localStorage
+      </h3>
+    </div>
+
+    <div
+      class="modal fade"
+      id="updateModal"
+      tabindex="-1"
+      aria-labelledby="updateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="updateModalLabel">
+              Modificar la información de la imagen.
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="formModal">
+              <div class="mb-3">
+                <label for="inputModal1" class="form-label">Título</label>
+                <input type="text" class="form-control" id="inputModal1" />
+              </div>
+              <div class="mb-3">
+                <label for="inputModal2" class="form-label">Descripción</label>
+                <input type="text" class="form-control" id="inputModal2" />
+              </div>
+              <div class="mb-3 d-flex justify-content-end">
+                <button class="btn btn-warning">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

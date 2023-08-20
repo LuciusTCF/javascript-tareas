@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  color: white;
+}
+.body-exercice {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+.btn {
+  width: 10rem;
+}
+.img-footer {
+  height: 8rem;
+}
+.img-footer img {
+  height: 100%;
+}
+.ej-5 {
+  height: 20rem;
+}
+.img-ej-5 {
+  height: 100%;
+}
+#parrafo {
+  min-height: 10rem;
+}
+#horaDiv {
+  width: 10rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.main-content {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.target {
+  display: flex;
+  justify-content: baseline;
+  margin: 2rem;
+  min-width: 10rem;
+  max-width: 15rem;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 15px -1px #000000;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.target:hover {
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.target img {
+  align-self: center;
+  width: 100%;
+  filter: grayscale(1);
+  transition-property: filter;
+  transition-duration: 1s;
+}
+.target img:hover {
+  filter: grayscale(0);
+  transition-property: filter;
+  transition-duration: 1s;
+}
+
+.modal-class {
+  color: #000000;
+  background: none;
+}
+.arrow {
+  width: 50rem;
+  color: white;
+  background-color: transparent;
+}
+#modalimg {
+  height: 1000px;
+  opacity: 1;
+}
+.modalImagen {
+  height: 100%;
+}
+
+.modal-size {
+  min-width: 1140px;
+}
+.modal-size-img {
+  min-width: 1000px;
+}
+.modal-size-img img {
+  min-width: 100%;
+}
+.modal-opacity {
+  background-color: transparent;
+  opacity: 0;
+}
+.modal-content {
+  background-color: transparent !important;
+  border: 0px !important;
+}
